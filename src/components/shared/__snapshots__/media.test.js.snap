@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`media media: custom 1`] = `
+Array [
+  "
+    @media screen and (max-width: ",
+  "abc",
+  "px) {
+      ",
+  "d",
+  "
+    }
+  ",
+]
+`;
+
+exports[`media media: lg 1`] = `
+Array [
+  "
+    @media screen and (max-width: ",
+  "1280",
+  "px) {
+      ",
+  "
+    }
+  ",
+]
+`;
+
+exports[`media media: md 1`] = `
+Array [
+  "
+    @media screen and (max-width: ",
+  "959",
+  "px) {
+      ",
+  "
+    }
+  ",
+]
+`;
+
+exports[`media media: sm 1`] = `
+Array [
+  "
+    @media screen and (max-width: ",
+  "599",
+  "px) {
+      ",
+  "
+    }
+  ",
+]
+`;
