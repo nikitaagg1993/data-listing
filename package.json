@@ -1,0 +1,62 @@
+{
+  "name": "data-listing",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "deepmerge": "^4.2.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.4",
+    "eslint-plugin-jest": "^24.0.0",
+    "jest-styled-components": "^7.0.3",
+    "lodash.orderby": "^4.6.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3",
+    "serve": "^11.3.2",
+    "shortid": "^2.2.15",
+    "styled-components": "^5.1.1"
+  },
+  "scripts": {
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "lint": "NODE_ENV=test node_modules/.bin/eslint \"{,!(node_modules|coverage)/**/}*.{js,jsx}\"",
+    "heroku-postbuild": "npm run build",
+    "test": "jest",
+    "preinstall": "npm config set package-lock false & rm -rf node_modules",
+    "test:coverage": "jest --verbose=false --coverage"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "react-test-renderer": "^16.13.1"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./src/setupTests.js"
+    ]
+  }
+}
